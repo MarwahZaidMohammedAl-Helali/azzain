@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="upload-section">
+            <label for="file-input" id="upload-button">Upload Files</label>
+            <input type="file" id="file-input" name="files[]" multiple style="display:none" />
+        </div>
+        <div id="review-section" style="display:none">
+            <form id="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+                <ul id="file-list"></ul>
+                <input type="button" id="add-button" value="Add more files" />
+                <input type="submit" value="Proceed" />
+            </form>
+        </div>
+        <div id="message"></div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>

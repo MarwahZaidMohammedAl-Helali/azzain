@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#upload-section, #review-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+#upload-section label,
+#review-section label {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#upload-section label:hover,
+#review-section label:hover {
+    background-color: #45a049;
+}
+
+#review-section input[type="button"],
+#review-section input[type="submit"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#review-section input[type="submit"] {
+    margin-left: 10px; /* Add padding between buttons */
+}
+
+#review-section input[type="button"]:hover,
+#review-section input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+#file-list .file-item {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+}
+
+#file-list .file-item .remove-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 16px; /* Adjust line-height to center the "x" vertically */
+    text-align: center;
+    border-radius: 50%;
+    padding: 0; /* Remove padding */
+    font-size: 14px; /* Adjust the font size */
+}
